@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.slider {
+  width: 90%;
+  margin: 0 auto 80px; }
+
+.slick-slide img {
+  width: 100%;
+  height: auto; }
+
+.mypattern {
+  width: 100%; }
+
+mypattern .slick-slide {
+  margin: 5px; }
+
+.mypattern .slick-slide:not(.slick-center) {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8); }

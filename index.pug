@@ -1,0 +1,213 @@
+doctype html
+html(lang="en")
+  head
+    block head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport",content="width=device-width, initial-scale=1")
+      meta(name="description",content="")
+      meta(name="author",content="")
+      link(rel="icon",href="../../favicon.ico")
+      title Kass home page template
+      block styles
+        link(rel="stylesheet",href="css/style.css")
+        link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css")
+        link(rel="stylesheet",href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+        link(rel="stylesheet",href="https://use.fontawesome.com/releases/v5.2.0/css/all.css")
+  body
+    block body
+      .container
+        .header
+          .header-top
+            ul.social
+              li <i class="fab fa-facebook-f"></i>
+              li <i class="fab fa-twitter"></i>
+              li <i class="fab fa-google-plus-g"></i>
+            .search
+              input(type='text', placeholder='Search')
+          .logo
+            h1
+              img(src="images/logo.png", alt="") 
+          ul.nav.navbar-nav
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown' href='#')
+                | HOME 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Home1
+                li
+                  a(href='#') Home2
+                li
+                  a(href='#') Home3
+            li
+              a(href='#') ABOUT ME
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown' href='#')
+                | CATEGORY 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') LIFE STYLE
+                li
+                  a(href='#') FASHION
+                li
+                  a(href='#') RELAXING
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown' href='#')
+                | POSTTYPE 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') LIFE STYLE
+                li
+                  a(href='#') FASHION
+                li
+                  a(href='#') RELAXING
+            li
+              a(href='#') TEPOGRAPHY
+            li
+              a(href='#') SHOP
+            li
+              a(href='#') CONTACT
+      .main 
+        .slider
+          include modules/slider/slider-1.pug
+        .container
+          .most-views
+            h2 MOST VIEWS
+            ul.row
+              li.col
+                p
+                  img(src="http://via.placeholder.com/470x390", alt="Last Minute Festive Packages From Superbreak")
+                .info
+                  p.info-category
+                    a(href="#") TRAVEL
+                  p.info-view
+                    span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                    span.info-view__comment <i class="fas fa-comments"></i> 2
+              li.col
+                p
+                  img(src="http://via.placeholder.com/470x390", alt="Last Minute Festive Packages From Superbreak")
+                .info
+                  p.info-category
+                    a(href="#") TRAVEL
+                  p.info-view
+                    span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                    span.info-view__comment <i class="fas fa-comments"></i> 2
+              li.col
+                p
+                  img(src="http://via.placeholder.com/470x390", alt="Last Minute Festive Packages From Superbreak")
+                .info
+                  p.info-category
+                    a(href="#") TRAVEL
+                  p.info-view
+                    span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                    span.info-view__comment <i class="fas fa-comments"></i> 2
+              li.col
+                p
+                  img(src="http://via.placeholder.com/470x390", alt="Last Minute Festive Packages From Superbreak")
+                .info
+                  p.info-category
+                    a(href="#") TRAVEL
+                  p.info-view
+                    span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                    span.info-view__comment <i class="fas fa-comments"></i> 2
+          .content
+            .row
+              .col-8
+                .feature-post
+                  h2 FEATURE POST
+                  .nav-control
+                     ul
+                        li
+                          a(href="#") Travel
+                        li
+                          a(href="#") Food
+                        li
+                          a(href="#") Lifestyle
+                        li
+                          a(href="#") Photography
+                .row
+                  .col-6
+                    p.feature-post__top
+                      img(src="http://via.placeholder.com/370x250", alt="")
+                    p.info-view
+                      span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                      span.info-view__comment <i class="fas fa-comments"></i> 2
+                    p.title Coventry City Guide Including Coventry Hotels Summer
+                    p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                    ul.view-more
+                      li.row
+                        .col-4
+                          p.view-more__img
+                            img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                        .col-8
+                          .view-more__title
+                            p.info-view
+                              span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                              span.info-view__comment <i class="fas fa-comments"></i> 2
+                            p.title It S Hurricane Season But We Are Visiting Hilton Head Island
+                      li.row
+                        .col-4
+                          p.view-more__img
+                            img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                        .col-8
+                          .view-more__title
+                            p.info-view
+                              span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                              span.info-view__comment <i class="fas fa-comments"></i> 2
+                            p.title It S Hurricane Season But We Are Visiting Hilton Head Island
+                  .col-6
+                    p.feature-post__top
+                      img(src="http://via.placeholder.com/370x250", alt="")
+                    p.info-view
+                      span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                      span.info-view__comment <i class="fas fa-comments"></i> 2
+                    p.title Coventry City Guide Including Coventry Hotels Summer
+                    p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                    ul.view-more
+                      li.row
+                        .col-4
+                          p.view-more__img
+                            img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                        .col-8
+                          .view-more__title
+                            p.info-view
+                              span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                              span.info-view__comment <i class="fas fa-comments"></i> 2
+                            p.title It S Hurricane Season But We Are Visiting Hilton Head Island
+                      li.row
+                        .col-4
+                          p.view-more__img
+                            img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                        .col-8
+                          .view-more__title
+                            p.info-view
+                              span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                              span.info-view__comment <i class="fas fa-comments"></i> 2
+                            p.title It S Hurricane Season But We Are Visiting Hilton Head Island
+                p.banner
+                  img(src="images/bnr.jpg", alt="kass template")
+                .latest-post
+                  h2 LATEST POST 
+                  .nav-control
+                     ul
+                        li
+                          a(href="#") Travel
+                        li
+                          a(href="#") Food
+                        li
+                          a(href="#") Lifestyle
+                        li
+                          a(href="#") Photography
+              .col-4
+    block scripts
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
+        script(src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+        script(src="js/index.js")
+
+
+           //- include modules/slider/slider-1.pug
