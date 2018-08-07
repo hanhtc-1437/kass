@@ -1,0 +1,108 @@
+include modules/mixin/mixin.pug
+doctype html
+html(lang="en")
+  head
+    block head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport",content="width=device-width, initial-scale=1")
+      meta(name="description",content="")
+      meta(name="author",content="")
+      link(rel="icon",href="../../favicon.ico")
+      title Kass home page template 2
+    block styles
+      link(rel="stylesheet",href="css/style.css")
+      link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css")
+      link(rel="stylesheet",href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+      link(rel="stylesheet",href="https://use.fontawesome.com/releases/v5.2.0/css/all.css")
+    body.page-2
+      block body
+        .header
+          .container
+            .logo.text-center
+              h1
+                img(src="images/logo.png", alt="kass")
+            ul.nav.justify-content-center
+                li.nav-item.dropdown
+                  a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#')#navbardrop HOME
+                  .dropdown-menu
+                    a.dropdown-item(href="#") HOME1
+                    a.dropdown-item(href="#") HOME2
+                li.nav-item
+                  a.nav-link(href='#') ABOUT ME
+                li.nav-item.dropdown
+                  a.nav-link.dropdown-toggle.active(data-toggle='dropdown' href='#')#navbardrop CATEGORY
+                  .dropdown-menu
+                    a.dropdown-item(href="#") LIFESTYLE
+                    a.dropdown-item(href="#") FASHION
+                li.nav-item
+                  a.nav-link(href='#') POSTTYPE
+                li.nav-item
+                  a.nav-link(href='#') TYPOGRAPHY
+                li.nav-item
+                  a.nav-link(href='#') SHOP
+                li.nav-item
+                  a.nav-link(href='#') CONTACT
+        .sliders
+          include modules/slider/slider-2.pug
+        .main
+          .container
+            .main-visual
+              .content-center.text-center
+                p.content-center__header.deco life  style
+                p.content-center__title Choose The Perfect Accommodations
+            .most-views
+              h2.text-center.deco MOST VIEWS
+              .nav-control
+                ul.nav.justify-content-center
+                  li.nav-item
+                    a.nav-link(href='#') TRAVEL
+                  li.nav-item
+                    a.nav-link(href='#') LIFESTYLE
+                  li.nav-item
+                    a.nav-link.active(href='#') TECHNOLOGY
+                  li.nav-item
+                    a.nav-link(href='#') FASHION
+                  li.nav-item
+                    a.nav-link(href='#') FOOD
+                  li.nav-item
+                    a.nav-link(href='#') BEAUTIFUL
+                  li.nav-item
+                    a.nav-link(href='#') PHOTOGRAPHY
+              .most-views__content
+                ul.row
+                  +list-content
+                  +list-content
+                  +list-content
+                  +list-content
+                  +list-content
+                  +list-content
+                  +list-content
+                  +list-content
+                  +list-content
+                  +list-content
+                  +list-content
+                  +list-content
+              .most-views__time
+                .row
+                  .col-md-6.text-center
+                    a.float-md-left(href="#") <i class="fas fa-chevron-left"></i>  OLD POST 
+                  .col-md-6.text-center
+                    a.float-md-right(href="#") NEW POST  <i class="fas fa-chevron-right"></i>
+          .instagram-list
+            .insta#instafeed 
+            .insta-link
+              span 
+                img(src="images/instagram.png", alt="")
+              span
+                a(href="#") @kasstheme
+      .footer
+        .container
+          include modules/footer/footer-2.pug
+      block scripts
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js")
+        script(src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+        script(src="js/instafeed.min.js")
+        script(src="js/index.js")
