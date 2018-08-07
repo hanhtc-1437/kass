@@ -23,9 +23,10 @@ mypattern .slick-slide{
 	margin: 5px;
 }
 .mypattern .slick-slide:not(.slick-center) {
--webkit-transform: scale(0.8);
--moz-transform: scale(0.8);
--ms-transform: scale(0.8);
--o-transform: scale(0.8);
-transform: scale(0.8);
+// -webkit-transform: scale(0.8);
+// -moz-transform: scale(0.8);
+// -ms-transform: scale(0.8);
+// -o-transform: scale(0.8);
+// transform: scale(0.8);
+opacity: 0.3;
 }
