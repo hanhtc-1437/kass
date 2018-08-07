@@ -1,0 +1,24 @@
+
+.row
+  .col-12
+    .logo.text-center
+      h1
+        a(href="/")
+          img(src="images/footer-logo.png", alt="Kass")
+ul.nav.justify-content-center
+
+  each item in items
+    li.nav-item
+      a.nav-link(href='#') #{item}
+
+ul.social.text-center
+  li <i class="fab fa-facebook-f"></i>
+  li <i class="fab fa-twitter"></i>
+  li <i class="fab fa-google-plus-g"></i>
+.copyright.text-center
+  .row
+    .col-12
+      p &copy; Copyright 2016.Template by No.13
+
+
+

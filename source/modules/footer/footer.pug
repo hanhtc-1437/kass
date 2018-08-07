@@ -1,0 +1,55 @@
+.row
+  .col-3
+    .about-us
+      h2.deco ABOUT US
+      p The term “boutique hotel” has been widely used in recent years, but what does it mean and why should you stay in one?
+      h3 NEWSLETTER
+      form.form-inline
+        .form-group
+          label.sr-only(for='insubcribe') Email
+          input#insubcribe.form-control(type='email' placeholder='Email')
+        button.btn.btn-primary(type='submit') Subcribe
+
+  .col-4
+    .about-us
+      h2.deco RECENT POST
+      ul.recent-post
+        li.row
+          .col-4
+            p
+              img(src="http://via.placeholder.com/100x70", alt="Family Safari Vacation To The Home Of The Gods")
+          .col-8
+            p.info-view
+              span.info-view__time <i class="far fa-clock"></i> 16 Aug
+              span.info-view__comment <i class="fas fa-comments"></i> 2
+            p.title
+              a(href="#") Coventry City Guide Including Coventry Hotels Summer
+
+        li.row
+          .col-4
+            p
+              img(src="http://via.placeholder.com/100x70", alt="Family Safari Vacation To The Home Of The Gods")
+          .col-8
+            p.info-view
+              span.info-view__time <i class="far fa-clock"></i> 16 Aug
+              span.info-view__comment <i class="fas fa-comments"></i> 2
+            p.title
+              a(href="#") Coventry City Guide Including Coventry Hotels Summer
+  .col-2
+    .about-us
+      h2.deco QUICK LINK
+      ul.quick-link
+        each quick_link in ['CATEGORY LIFESTYLE','RECENT POST','NEW POST','RECOMMENDED','SHOP ONLINE']
+          li
+            a(href="#")= quick_link
+  .col-3
+    .about-us
+      h2.deco TAGS
+      ul.tags
+        each tags in ['Kass','Blog','Magazine','Travel','Lifestyle','psd','template','technology']
+          li
+            a(href="#")= tags
+.copyright.text-center
+  .row
+    .col-12
+      p &copy; Copyright 2016.Template by No.13

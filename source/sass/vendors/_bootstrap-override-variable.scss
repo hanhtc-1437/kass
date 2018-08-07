@@ -1,0 +1,30 @@
+.col-lg-4 {
+  @include mq(large) {
+    .nav-tabs {
+      a {
+        font-size: $f11;
+      }
+    }
+  }
+}
+.navbar-toggler:not(:disabled):not(.disabled) {
+  outline: none;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+  padding: 1.5rem 0;
+}
+
+@include mq(medium) {
+  .navbar-brand {
+    display: none;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding: .5rem 2rem 2rem;
+  }
+}
+.navbar-brand {
+  visibility: hidden;
+}
