@@ -1,6 +1,3 @@
 node_modules/*
 js/gulpfile.js
 package-lock.json
-*.html
-keys
-keys.pub
