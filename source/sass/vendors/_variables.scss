@@ -1,0 +1,38 @@
+// ======================================================
+// Vendors :: Bootstrap Variables
+// ======================================================
+
+$color-1: #fff; //white
+$color-2: #232323; //black
+$color-3: #d5d5d5; //gray1
+$color-4: #959595; //gray2
+$color-5: #0962c6; //blue
+$color-6: #252525; //blue
+$primary-font: 'Rubik', sans-serif;
+$f11: 1.1rem;
+$f12: 1.2rem;
+$f13: 1.3rem;
+$f14: 1.4rem;
+$f15: 1.5rem;
+$f16: 1.6rem;
+$f17: 1.7rem;
+$f18: 1.8rem;
+$f19: 1.9rem;
+$f20: 2rem;
+$f21: 2.1rem;
+$f22: 2.2rem;
+
+// mixin break point
+$mq-breakpoints: (
+  'xsmall': 320px,
+  'small' : 600px,
+  'medium': 768px,
+  'large' : 992px,
+  'xlarge': 1200px,
+);
+
+@mixin mq($breakpoint: medium) {
+  @media screen and (min-width: #{map-get($mq-breakpoints, $breakpoint)}) {
+    @content;
+  }
+}

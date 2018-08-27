@@ -1,3 +1,9 @@
 node_modules/*
-js/gulpfile.js
+source/js/gulpfile.js
 package-lock.json
+package.json
+*.html
+source/css/*
+dest/*
+tmp/*
+source/bootstrap/*

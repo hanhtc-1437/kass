@@ -1,0 +1,22 @@
+mixin info-view
+    p.info-view
+        span.info-view__time <i class="far fa-clock"></i> 16 Aug
+        span.info-view__comment <i class="fas fa-comments"></i> 2
+
+mixin info-view2
+  p.info-view.col-6
+    span.info-view__time <i class="far fa-clock"></i> 16 Aug
+    span.info-view__comment <i class="fas fa-comments"></i> 2
+
+mixin content-center
+  a(href='#')
+    .content-center
+      p.content-center__header life style
+      p.content-center__title Choose The Perfect Accommodations
+
+
+//- image
+mixin picture(path, name)
+  img(src=path + "/" + name + ".jpg" alt=name)
+
+//- +picture('http://herrkessler.de/codepen', 'beer')

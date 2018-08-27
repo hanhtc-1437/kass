@@ -1,0 +1,467 @@
+include modules/mixin/mixin.pug
+doctype html
+html(lang="en")
+  head
+    block head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport",content="width=device-width, initial-scale=1")
+      meta(name="description",content="★★★★★★★★★★★")
+      meta(name="author",content="★★★★★★★★★★★")
+      link(rel="icon",href="../../favicon.ico")
+      title Kass Homepage | ★★★★★★★★★★★
+      block styles
+        link(rel="stylesheet",href="css/style.css")
+        //- link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css")
+        link(rel="stylesheet",href="https://fonts.googleapis.com/css?family=Lora:400,700|Rubik:400,700")
+        link(rel="stylesheet",href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+        link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
+        link(rel="stylesheet",href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css")
+        link(rel="stylesheet",href="https://use.fontawesome.com/releases/v5.2.0/css/all.css")
+  body
+    block body
+      .container
+        .header
+          .header-top
+            .row
+              .col-6.text-center
+                ul.social.float-md-left
+                  li
+                    a(href="#") <i class="fab fa-facebook-f"></i>
+                  li
+                    a(href="#") <i class="fab fa-twitter"></i>
+                  li
+                    a(href="#") <i class="fab fa-google-plus-g"></i>
+              .col-6.text-center
+                .search.float-md-right
+                  input(type='text', placeholder='Search')
+          .logo
+            h1.text-center
+              a(href="/")
+                img(src="images/logo.png", alt="")
+      nav.navbar.navbar-expand-md.navbar-light.bg-light
+        a(href="#").navbar-brand Menu
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expended="false", aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarNav
+          ul.nav.justify-content-center.nav-index.navbar-nav
+            li.nav-item.dropdown
+              a.nav-link.dropdown-toggle.active(data-toggle='dropdown' href='#')#navbardrop HOME
+              .dropdown-menu
+                a.dropdown-item(href="#") HOME1
+                a.dropdown-item(href="#") HOME2
+            li.nav-item
+              a.nav-link(href='#') ABOUT ME
+            li.nav-item.dropdown
+              a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#')#navbardrop CATEGORY
+              .dropdown-menu
+                a.dropdown-item(href="#") LIFESTYLE
+                a.dropdown-item(href="#") FASHION
+            li.nav-item
+              a.nav-link(href='#') POSTTYPE
+            li.nav-item
+              a.nav-link(href='#') TYPOGRAPHY
+            li.nav-item
+              a.nav-link(href='#') SHOP
+            li.nav-item
+              a.nav-link(href='#') CONTACT
+      .main
+        .sliders.sliders-index
+          include modules/slider/index.pug
+        .container
+          .most-views
+            h2.text-center.deco MOST VIEWS
+            ul.row
+              li.col
+                p
+                  img(src="http://via.placeholder.com/470x390", alt="Last Minute Festive Packages From Superbreak")
+                .info.row
+                  p.info-category.col-6
+                    a(href="#") TRAVEL
+                  p.info-view.col-6
+                    span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                    span.info-view__comment <i class="fas fa-comments"></i> 2
+                  p.title
+                    a(href="#") Last Minute Festive Packages From Superbreak
+              li.col
+                p
+                  img(src="http://via.placeholder.com/470x390", alt="Last Minute Festive Packages From Superbreak")
+                .info.row
+                  p.info-category.col-6
+                    a(href="#") LIFE STYLE
+                  p.info-view.col-6
+                    span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                    span.info-view__comment <i class="fas fa-comments"></i> 2
+                  p.title
+                    a(href="#") Having Your Breasts Reduced With Breast Augmentation
+              li.col
+                p
+                  img(src="http://via.placeholder.com/470x390", alt="Last Minute Festive Packages From Superbreak")
+                .info.row
+                  p.info-category.col-6
+                    a(href="#") PHOTOGRPHY
+                  p.info-view.col-6
+                    span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                    span.info-view__comment <i class="fas fa-comments"></i> 2
+                  p.title
+                    a(href="#") For Women Only Your Computer Usage Could Cost
+              li.col
+                p
+                  img(src="http://via.placeholder.com/470x390", alt="Last Minute Festive Packages From Superbreak")
+                .info.row
+                  p.info-category.col-6
+                    a(href="#") FOOD
+                  p.info-view.col-6
+                    span.info-view__time <i class="far fa-clock"></i> 16 Aug
+                    span.info-view__comment <i class="fas fa-comments"></i> 2
+                  p.title
+                    a(href="#") Top 3 Reasons Why You Need Cookie Recipes
+          .content
+            .row
+              .col-12.col-lg-8
+                .feature-post.row
+                  h2.col-3.float-left.deco FEATURE POST
+                  .nav-control.col-9.float-right
+                     ul.nav.nav-content.justify-content-end
+                        li.nav-item
+                          a.nav-link(href='#travel', data-toggle='tab') travel
+                        li.nav-item
+                          a.nav-link.active(href='#food', data-toggle='tab') food
+                        li.nav-item
+                          a.nav-link(href='#lifestyle', data-toggle='tab') lifestyle
+                        li.nav-item
+                          a.nav-link(href='#photography', data-toggle='tab') photography
+                .tab-content
+                  .tab-pane#travel
+                    .row
+                      .col-6
+                        p.feature-post__top
+                          img(src="http://via.placeholder.com/370x250", alt="")
+                        +info-view
+                        p.title.thumb
+                          a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                        p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                        ul.view-more
+                          li.row
+                            .col-4
+                              p.view-more__img
+                                img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                            .col-8
+                              .view-more__title
+                                +info-view
+                                p.title
+                                  a(href="#") It S Hurricane Season But We Are Visiting Hilton Head Island
+                      .col-6
+                        p.feature-post__top
+                          img(src="http://via.placeholder.com/370x250", alt="")
+                        +info-view
+                        p.title.thumb
+                          a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                        p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                        ul.view-more
+                          li.row
+                            .col-4
+                              p.view-more__img
+                                img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                            .col-8
+                              .view-more__title
+                                +info-view
+                                p.title
+                                  a(href="#") It S Hurricane Season But We Are Visiting Hilton Head Island
+                  .tab-pane#food.in.active
+                    .row
+                      .col-6
+                        p.feature-post__top
+                          img(src="http://via.placeholder.com/370x250", alt="")
+                        +info-view
+                        p.title.thumb
+                          a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                        p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                        ul.view-more
+                          li.row
+                            .col-4
+                              p.view-more__img
+                                img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                            .col-8
+                              .view-more__title
+                                +info-view
+                                p.title
+                                  a(href="#") It S Hurricane Season But We Are Visiting Hilton Head Island
+                          li.row
+                            .col-4
+                              p.view-more__img
+                                img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                            .col-8
+                              .view-more__title
+                                +info-view
+                                p.title
+                                  a(href="#") It S Hurricane Season But We Are Visiting Hilton Head Island
+                      .col-6
+                        p.feature-post__top
+                          img(src="http://via.placeholder.com/370x250", alt="")
+                        +info-view
+                        p.title.thumb
+                          a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                        p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                        ul.view-more
+                          li.row
+                            .col-4
+                              p.view-more__img
+                                img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                            .col-8
+                              .view-more__title
+                                +info-view
+                                p.title
+                                  a(href="#") It S Hurricane Season But We Are Visiting Hilton Head Island
+                          li.row
+                            .col-4
+                              p.view-more__img
+                                img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                            .col-8
+                              .view-more__title
+                                +info-view
+                                p.title
+                                  a(href="#") It S Hurricane Season But We Are Visiting Hilton Head Island
+                  .tab-pane#lifestyle
+                    .row
+                      .col-6
+                        p.feature-post__top
+                          img(src="http://via.placeholder.com/370x250", alt="")
+                        +info-view
+                        p.title.thumb
+                          a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                        p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                        ul.view-more
+                          li.row
+                            .col-4
+                              p.view-more__img
+                                img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                            .col-8
+                              .view-more__title
+                                +info-view
+                                p.title
+                                  a(href="#") It S Hurricane Season But We Are Visiting Hilton Head Island
+                      .col-6
+                        p.feature-post__top
+                          img(src="http://via.placeholder.com/370x250", alt="")
+                        +info-view
+                        p.title.thumb
+                          a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                        p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                        ul.view-more
+                          li.row
+                            .col-4
+                              p.view-more__img
+                                img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                            .col-8
+                              .view-more__title
+                                +info-view
+                                p.title
+                                  a(href="#") It S Hurricane Season But We Are Visiting Hilton Head Island
+                          li.row
+                            .col-4
+                              p.view-more__img
+                                img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                            .col-8
+                              .view-more__title
+                                +info-view
+                                p.title
+                                  a(href="#") It S Hurricane Season But We Are Visiting Hilton Head Island
+                  .tab-pane#photography
+                    .row
+                      .col-6
+                        p.feature-post__top
+                          img(src="http://via.placeholder.com/370x250", alt="")
+                        +info-view
+                        p.title.thumb
+                          a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                        p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                        ul.view-more
+                          li.row
+                            .col-4
+                              p.view-more__img
+                                img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                            .col-8
+                              .view-more__title
+                                +info-view
+                                p.title
+                                  a(href="#") It S Hurricane Season But We Are Visiting Hilton Head Island
+                          li.row
+                            .col-4
+                              p.view-more__img
+                                img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                            .col-8
+                              .view-more__title
+                                +info-view
+                                p.title
+                                  a(href="#") It S Hurricane Season But We Are Visiting Hilton Head Island
+                      .col-6
+                        p.feature-post__top
+                          img(src="http://via.placeholder.com/370x250", alt="")
+                        +info-view
+                        p.title.thumb
+                          a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                        p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                        ul.view-more
+                          li.row
+                            .col-4
+                              p.view-more__img
+                                img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                            .col-8
+                              .view-more__title
+                                +info-view
+                                p.title
+                                  a(href="#") It S Hurricane Season But We Are Visiting Hilton Head Island
+                          li.row
+                            .col-4
+                              p.view-more__img
+                                img(src="http://via.placeholder.com/100x70", alt="It S Hurricane Season But We Are Visiting Hilton Head Island")
+                            .col-8
+                              .view-more__title
+                                +info-view
+                                p.title
+                                  a(href="#") It S Hurricane Season But We Are Visiting Hilton Head Island
+                p.banner
+                  img(src="images/bnr.jpg", alt="kass template")
+                .latest-post.row
+                  h2.col-3.float-left.deco LATEST POST
+                  .nav-control.col-9.float-right
+                     ul.nav.nav-tabs.nav-content.justify-content-end
+                        li.nav-item
+                          a.nav-link(href='#travel', data-toggle='tab') travel
+                        li
+                          a.nav-link(href='#food', data-toggle='tab') food
+                        li.active
+                          a.nav-link.active(href='#lifestyle', data-toggle='tab') lifestyle
+                        li
+                          a.nav-link(href='#photography', data-toggle='tab') photography
+                .tab-content
+                  ul.latest-post__list.tab-pane#travel
+                    li.row
+                      .col-4
+                        p
+                          img(src="http://via.placeholder.com/270x180", alt="")
+                      .col-8
+                        .content-list
+                          +info-view
+                          p.title.thumb
+                            a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                          p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                          a.read-more(href="#") Read more
+                    li.row
+                      .col-4
+                        p
+                          img(src="http://via.placeholder.com/270x180", alt="")
+                      .col-8
+                        .content-list
+                          +info-view
+                          p.title.thumb
+                            a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                          p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                          a.read-more(href="#") Read more
+                    li.row
+                      .col-4
+                        p
+                          img(src="http://via.placeholder.com/270x180", alt="")
+                      .col-8
+                        .content-list
+                          +info-view
+                          p.title.thumb
+                            a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                          p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                          a.read-more(href="#") Read more
+                  ul.latest-post__list.tab-pane#food
+                    li.row
+                      .col-4
+                        p
+                          img(src="http://via.placeholder.com/270x180", alt="")
+                      .col-8
+                        .content-list
+                          +info-view
+                          p.title.thumb
+                            a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                          p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                          a.read-more(href="#") Read more
+                  ul.latest-post__list.tab-pane.in.active#lifestyle
+                    li.row
+                      .col-4
+                        p
+                          img(src="http://via.placeholder.com/270x180", alt="")
+                      .col-8
+                        .content-list
+                          +info-view
+                          p.title.thumb
+                            a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                          p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                          a.read-more(href="#") Read more
+                    li.row
+                      .col-4
+                        p
+                          img(src="http://via.placeholder.com/270x180", alt="")
+                      .col-8
+                        .content-list
+                          +info-view
+                          p.title.thumb
+                            a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                          p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                          a.read-more(href="#") Read more
+                  ul.latest-post__list.tab-pane#photography
+                    li.row
+                      .col-4
+                        p
+                          img(src="http://via.placeholder.com/270x180", alt="")
+                      .col-8
+                        .content-list
+                          +info-view
+                          p.title.thumb
+                            a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                          p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                          a.read-more(href="#") Read more
+                    li.row
+                      .col-4
+                        p
+                          img(src="http://via.placeholder.com/270x180", alt="")
+                      .col-8
+                        .content-list
+                          +info-view
+                          p.title.thumb
+                            a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                          p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                          a.read-more(href="#") Read more
+                    li.row
+                      .col-4
+                        p
+                          img(src="http://via.placeholder.com/270x180", alt="")
+                      .col-8
+                        .content-list
+                          +info-view
+                          p.title.thumb
+                            a(href="#") Coventry City Guide Including Coventry Hotels Summer
+                          p.description You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property.
+                          a.read-more(href="#") Read more
+                .row
+                  .col-12
+                    p.load-more.text-center
+                      a.button(href="#") LOAD MORE
+              .col-12.col-lg-4
+                block sidebar
+                  include modules/sidebar/sidebar.pug
+        .instagram-list
+          .insta.owl-carousel.owl-theme.gallery.row.no-gutter#instafeed-gallery-feed
+          .insta-link
+            span
+              img(src="images/instagram.png", alt="")
+            span
+              a(href="#") @kasstheme
+    footer
+      .container
+        include modules/footer/footer.pug
+    block scripts
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
+      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js")
+      script(src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
+      script(src="js/common.js")
+      script(src="js/index.js")
